@@ -55,10 +55,10 @@ lib/
     └── arb files
 
 ```
-🚀 Bắt đầu
+## 🚀 Bắt đầu
 1. Clone dự án
 ```bash
-git clone https://github.com/<your-org>/green_connect_mb.git
+git clone https://github.com/GreenConnectDevTeam/green_connect_mb.git
 cd green_connect_mb
 ```
 
@@ -72,46 +72,54 @@ flutter pub get
 cp .env.example .env
 ```
 
-📝 Quy tắc Commit (Commitlint)
+4. Chạy (phải có android emulator)
+```bash
+flutter run
+```
 
-- <type>(scope): <description>
-Các loại commit thường dùng:
+5. Chạy debug (phải có android emulator)
+```bash
+flutter run --debug
+```
 
-feat: Thêm tính năng mới
+## 📝 Quy tắc Commit (Commitlint)
 
-fix: Sửa lỗi
+Commit message theo chuẩn **[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)**:
 
-docs: Thay đổi tài liệu (README, comments, …)
+### 🔹 Các loại commit thường dùng
 
-style: Format code, thay đổi không ảnh hưởng logic (indent, space, …)
+| Type      | Ý nghĩa                                                                 |
+|-----------|-------------------------------------------------------------------------|
+| ✨ feat   | Thêm tính năng mới                                                       |
+| 🐛 fix    | Sửa lỗi                                                                 |
+| 📝 docs   | Thay đổi tài liệu (README, comments, …)                                 |
+| 🎨 style  | Format code, thay đổi không ảnh hưởng logic (indent, space, …)          |
+| ♻️ refactor | Tái cấu trúc code, không thêm tính năng, không sửa bug                  |
+| ✅ test   | Thêm hoặc sửa test                                                       |
+| ⚙️ chore  | Cập nhật tool, config, package mà không ảnh hưởng code                  |
 
-refactor: Tái cấu trúc code, không thêm tính năng, không sửa bug
+### 🔹 Ví dụ
 
-test: Thêm hoặc sửa test
-
-chore: Cập nhật tool, config, package mà không ảnh hưởng code
 ```bash
 git commit -m "feat(auth): add login with email/password"
 git commit -m "fix(user): handle null avatar in profile"
 git commit -m "docs: update README with folder structure"
 ```
 
-📌 Công nghệ chính
-Flutter(Dart)
-Riverpod
- – State Management
-Dio
- – Networking
-GetIt
- – Dependency Injection
-intl
- – Localization & i18n
+## 📌 Công nghệ chính
+- [Flutter](https://flutter.dev/) (Dart)
+- [Riverpod](https://riverpod.dev/) – State Management
+- [Dio](https://pub.dev/packages/dio) – Networking
+- [GetIt](https://pub.dev/packages/get_it) – Dependency Injection
+- [intl](https://pub.dev/packages/intl) – Localization & i18n
 
- 👨‍💻 Đóng góp
-Fork dự án
-Tạo branch mới feature/ten-tinh-nang
-Commit theo chuẩn commitlint
-Tạo Pull Request
 
-📄 Giấy phép
+## 👨‍💻 Đóng góp
+
+1. 🍴 **Fork** dự án  
+2. 🌱 Tạo branch mới: `feature/ten-tinh-nang`  
+3. ✅ Commit theo chuẩn [Commitlint](#-quy-tắc-commit-commitlint)  
+4. 🚀 Tạo **Pull Request**
+
+## 📄 Giấy phép
 MIT License © 2025 Green Connect
